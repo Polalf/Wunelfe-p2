@@ -29,7 +29,10 @@ public class Player : MonoBehaviour
     public float AtkRange = 0.5f;
     public LayerMask enemyLayer;
 
-    //public Transform 
+    [Header("Items")]
+    public int Ganzuas;
+
+    
 
 
     private void Start()
