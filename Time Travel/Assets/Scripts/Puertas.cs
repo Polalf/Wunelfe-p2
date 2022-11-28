@@ -31,7 +31,7 @@ public class Puertas : MonoBehaviour
             {
                 if (Player.GetComponent<Player>().Ganzuas <= 0)
                 {
-                    //Debug.Log("consigue Ganzuas");
+                    Debug.Log("consigue Ganzuas");
                     FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
                 }
                 else if (Player.GetComponent<Player>().Ganzuas > 0)
