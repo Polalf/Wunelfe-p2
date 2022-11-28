@@ -38,6 +38,8 @@ public class Puertas : MonoBehaviour
                 {
                     keyCheck.SetActive(true);
                     Debug.Log("cerradura");
+                    Player.GetComponent<Player>().Stop(false);
+                    
                 }
 
             }

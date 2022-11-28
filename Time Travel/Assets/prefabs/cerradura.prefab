@@ -689,6 +689,7 @@ MonoBehaviour:
   Marc1: {fileID: 2188465282766149363}
   Marc2: {fileID: 2188465282276982880}
   Marc3: {fileID: 2188465282385585296}
+  player: {fileID: 0}
   rotate: 50
   activar: 32
-  Cerradura: {fileID: 2188465282736633570}
+  Body: {fileID: 2188465282736633570}

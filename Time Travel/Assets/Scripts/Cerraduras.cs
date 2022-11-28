@@ -5,16 +5,21 @@ using UnityEngine;
 public class Cerraduras : MonoBehaviour
 {
     public GameObject Marc1, Marc2, Marc3;
+    public GameObject player;
     int current = 0;
     public float rotate;
     public KeyCode activar;
     private int correctas;
-    public GameObject Cerradura;
-    
+    public GameObject Body;
+    public float stop =0f;
+
+
+
     bool inside = false;
 
     private void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         correctas = 0;
         Marc1.SetActive(true);
         Marc2.SetActive(false);
@@ -51,16 +56,16 @@ public class Cerraduras : MonoBehaviour
 
             }
 
-            
+
         }
         if (!inside)
         {
-            if(Input.GetKeyDown(activar))
+            if (Input.GetKeyDown(activar))
             {
-                GetComponent<Player>().Ganzuas -= 1;
+                player.GetComponent<Player>().Ganzuas -= 1;
             }
         }
-      
+
         if (moveX == -1)
         {
             transform.Rotate(0, 0, rotate * Time.deltaTime);
@@ -73,7 +78,9 @@ public class Cerraduras : MonoBehaviour
         if (correctas >= 3)
         {
             Debug.Log("listo");
-            Cerradura.SetActive(false);
+            player.GetComponent<Player>().Stop(true);
+            Body.SetActive(false);
+
         }
     }
 

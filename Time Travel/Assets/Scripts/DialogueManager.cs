@@ -5,11 +5,17 @@ using UnityEngine;
 public class DialogueManager : MonoBehaviour
 {
     private Queue<string> oraciones;
+    
     void Start()
+    {
+        
+        oraciones = new Queue<string>();
+    }
+
+    public void end()
     {
         oraciones = new Queue<string>();
     }
-    
     public void StartDialogue(Dialogue dialogue)
     {
         Debug.Log("Empezar conversacion con" + dialogue.name);
@@ -21,22 +27,25 @@ public class DialogueManager : MonoBehaviour
             oraciones.Enqueue(oracion);
         }
 
-        DisplaySigOracion();
+        //DisplaySigOracion();
     }
-    public void DisplaySigOracion()
+    public bool DisplaySigOracion()
     {
         if(oraciones.Count == 0)
         {
             FinDialogo();
-            return;
+            
+            return true;
         }
         string oracion = oraciones.Dequeue();
         Debug.Log(oracion);
+        return false;
        
     }
     void FinDialogo()
     {
         Debug.Log("fin conversacion");
+        
     }
 
 }

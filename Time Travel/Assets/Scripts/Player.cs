@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     public float speed = 5f;
     private Vector3 playerVelocity;
     public float jumpForce = 10f;
-    private float currentSpeed;
+    public float currentSpeed;
     private bool InConversation;
 
     //[Header("Life")]
@@ -54,14 +54,14 @@ public class Player : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
-        if(InConversation)
-        {
-            currentSpeed = 0;
-        }
-        else
-        {
-            currentSpeed = speed;
-        }
+        //if(InConversation)
+        //{
+        //    currentSpeed = 0;
+        //}
+        //else
+        //{
+        //    currentSpeed = speed;
+        //}
        
         //LIFE
         //if (currentLife <= 0)
@@ -77,6 +77,19 @@ public class Player : MonoBehaviour
       
 
     }
+    public void Stop(bool finished)
+    {
+        if (finished)
+        { 
+             currentSpeed = speed;
+        }
+        else
+        {
+            currentSpeed = 0;
+        }
+       
+    }
+    
   
     
     //public void PlayerTakeDamage(int enemyDamage)
