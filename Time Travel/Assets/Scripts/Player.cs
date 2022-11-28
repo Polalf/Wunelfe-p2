@@ -12,42 +12,39 @@ public class Player : MonoBehaviour
     public float speed = 5f;
     private Vector3 playerVelocity;
     public float jumpForce = 10f;
+    private float currentSpeed;
+    private bool InConversation;
 
-    [Header("Life")]
-    public int maxLife;
-    public int currentLife;
-    public GameObject gameOver;
-    //public HealthBar healthBar;
+    //[Header("Life")]
+    //public int maxLife;
+    //public int currentLife;
+    //public GameObject gameOver;
+    ////public HealthBar healthBar;
 
-    [Header("Attack")]
-    public KeyCode atkKey;
-    public int Damage;
-    public float coldown;
-    private bool canAttack;
-    float timeratk = 0f;
-    public Transform attackpoint;
-    public float AtkRange = 0.5f;
-    public LayerMask enemyLayer;
 
     [Header("Items")]
     public int Ganzuas;
 
-    
+    //[Header("Dialogue")]
+    //public Dialogue dialogue;
 
 
     private void Start()
     {
+        
+        currentSpeed = speed;
+        Ganzuas = 0;
         controller = gameObject.GetComponent<CharacterController>();
-        currentLife = maxLife;
+        //currentLife = maxLife;
         //healthBar.SetMaxHealth(maxLife);
-        canAttack = true;
+        //canAttack = true;
     }
 
     void Update()
     {
         //MOVE
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        controller.Move(move * Time.deltaTime * speed);
+        controller.Move(move * Time.deltaTime * currentSpeed);
         if (Input.GetAxis("Horizontal") < -0.001f)
         {
             transform.rotation = Quaternion.Euler(0, 180, 0);
@@ -57,47 +54,31 @@ public class Player : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
-        //playerAnimator.SetFloat("Speed", move.x);
+        if(InConversation)
+        {
+            currentSpeed = 0;
+        }
+        else
+        {
+            currentSpeed = speed;
+        }
+       
         //LIFE
-        if (currentLife <= 0)
-        {
-            gameObject.SetActive(true);
+        //if (currentLife <= 0)
+        //{
+        //    gameObject.SetActive(true);
 
-        }
-        if(currentLife > maxLife)
-        {
-            currentLife = maxLife;
-        }
-        ////attack
-        //if (timeratk >= coldown)
-        //{
-        //    canAttack = true;
         //}
-        //else
+        //if(currentLife > maxLife)
         //{
-        //    timeratk += Time.deltaTime;
+        //    currentLife = maxLife;
         //}
-        //if (Input.GetKeyDown(atkKey) && canAttack)
-        //{
-        //    Attack();
-        //    canAttack = false;
-        //    timeratk = 0;
-        //}
-
+       
+      
 
     }
   
-    //void Attack()
-    //{
-    //    playerAnimator.SetTrigger("ATK");
-
-    //    Collider[] hitEnemies = Physics.OverlapSphere(attackpoint.position, AtkRange, enemyLayer);
-
-    //    foreach (Collider enemy in hitEnemies)
-    //    {
-    //        enemy.GetComponent<enemies>().EnemyTakeDamage(Damage);
-    //    }
-    //} 
+    
     //public void PlayerTakeDamage(int enemyDamage)
     //{
     //    currentLife -= enemyDamage;
@@ -110,12 +91,7 @@ public class Player : MonoBehaviour
 
     //    }
     //}
-    private void OnDrawGizmosSelected()
-    {
-        if (attackpoint == null)
-            return;
-        Gizmos.DrawWireSphere(attackpoint.position, AtkRange);
-    }
+    
     
 
 

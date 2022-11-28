@@ -8,8 +8,10 @@ public class Puertas : MonoBehaviour
     public GameObject keyCheck;
 
     public GameObject keyStart;
-    public KeyCode StartQuest;
+    public KeyCode Interactuar;
     public bool abierta = false;
+
+    public Dialogue dialogue;
 
     private void Start()
     {
@@ -21,31 +23,35 @@ public class Puertas : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             keyStart.SetActive(true);
-            if (Input.GetKeyDown(StartQuest) && abierta)
+            if (Input.GetKeyDown(Interactuar) && abierta)
             {
                 Debug.Log("entra");
             }
-            else if(abierta == false && Input.GetKeyDown(StartQuest))
-            { 
-                keyCheck.SetActive(true);
-                Debug.Log("cerradura");
+            else if (Input.GetKeyDown(Interactuar) && !abierta)
+            {
+                if (Player.GetComponent<Player>().Ganzuas <= 0)
+                {
+                    //Debug.Log("consigue Ganzuas");
+                    FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+                }
+                else if (Player.GetComponent<Player>().Ganzuas > 0)
+                {
+                    keyCheck.SetActive(true);
+                    Debug.Log("cerradura");
+                }
 
             }
-            else if(Player.GetComponent<Player>().Ganzuas == 0 && Input.GetKeyDown(StartQuest))
-            {
-                
-                Debug.Log("consigue Ganzuas");
             
-                
-            }
+            
         }
+           
     }
     private void OnTriggerExit(Collider collision)
     {
         if (collision.CompareTag("Player"))
         {
             keyStart.SetActive(false);
-            if (Input.GetKeyDown(StartQuest))
+            if (Input.GetKeyDown(Interactuar))
             {
                 keyCheck.SetActive(true);
                 Debug.Log("saliste");
