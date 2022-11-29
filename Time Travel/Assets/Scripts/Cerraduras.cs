@@ -61,7 +61,7 @@ public class Cerraduras : MonoBehaviour
             }
         }
       
-        else if (moveX == -1)
+        if (moveX == -1)
         {
             transform.Rotate(0, 0, rotate * Time.deltaTime);
 
