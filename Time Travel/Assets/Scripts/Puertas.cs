@@ -10,6 +10,7 @@ public class Puertas : MonoBehaviour
     public GameObject keyStart;
     public KeyCode Interactuar;
     public bool abierta = false;
+    public Transform pointB;
 
     public Dialogue dialogue;
 
@@ -25,7 +26,8 @@ public class Puertas : MonoBehaviour
             keyStart.SetActive(true);
             if (Input.GetKeyDown(Interactuar) && abierta)
             {
-                Debug.Log("entra");
+                Entrar();
+                
             }
             else if (Input.GetKeyDown(Interactuar) && !abierta)
             {
@@ -59,5 +61,12 @@ public class Puertas : MonoBehaviour
                 Debug.Log("saliste");
             }
         }
+    }
+    public  void Entrar()
+    {
+        
+        Player.transform.position = new Vector3(pointB.transform.position.x, pointB.transform.position.y , pointB.transform.position.z);
+
+        Debug.Log("entrar");
     }
 }
