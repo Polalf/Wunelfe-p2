@@ -831,7 +831,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2188465282736633570, guid: 05a6f7a10034096429ba46d7674ccebf, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2188465282736633572, guid: 05a6f7a10034096429ba46d7674ccebf, type: 3}
       propertyPath: m_RootOrder
@@ -1101,7 +1101,7 @@ MonoBehaviour:
   keyCheck: {fileID: 1537751649}
   keyStart: {fileID: 813581436}
   Interactuar: 101
-  abierta: 1
+  abierta: 0
   pointB: {fileID: 1465111023}
   dialogue:
     name: Puerta
