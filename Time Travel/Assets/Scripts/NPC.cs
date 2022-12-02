@@ -13,6 +13,7 @@ public class NPC : MonoBehaviour
     public Dialogue dialogue;
     public GameObject dialogueManager;
     public GameObject Player;
+    public bool InDialogue;
 
     private void Start()
     {
@@ -21,8 +22,17 @@ public class NPC : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
+        
+
         if (collision.transform.tag == "Player")
         {
+            if(InDialogue)
+            {
+                collision.gameObject.GetComponent<Player>().Stop(false);
+            }
+                
+            //Player.GetComponent<Player>().InConversation = true;
+
             Debug.Log("Contacto");
              canTalk = true;
             FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
@@ -34,8 +44,10 @@ public class NPC : MonoBehaviour
     {
         if(collision.transform.tag == "Player")
         {
+            InDialogue = false;
             canTalk = false;
             FindObjectOfType<DialogueManager>().end();
+            
             
         }
         
@@ -46,7 +58,8 @@ public class NPC : MonoBehaviour
         {
             if (Input.GetKeyDown(Interactuar))
             {
-                
+
+                InDialogue = true;
                 bool finished = dialogueManager.GetComponent<DialogueManager>().DisplaySigOracion();
                 Player.GetComponent<Player>().Stop(finished);
 

@@ -466,6 +466,7 @@ GameObject:
   m_Component:
   - component: {fileID: 495318789}
   - component: {fileID: 495318788}
+  - component: {fileID: 495318790}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -500,6 +501,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &495318790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495318787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd40574348a44604485ecfbc4c3af001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1101,12 +1114,13 @@ MonoBehaviour:
   keyCheck: {fileID: 1537751649}
   keyStart: {fileID: 813581436}
   Interactuar: 101
-  abierta: 0
+  abierta: 1
   pointB: {fileID: 1465111023}
   dialogue:
     name: Puerta
     oraciones:
     - Necesito conseguir una Ganzua.
+  canEnter: 0
 --- !u!65 &1086321103
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1131,7 +1145,6 @@ GameObject:
   - component: {fileID: 1153600610}
   - component: {fileID: 1153600609}
   - component: {fileID: 1153600608}
-  - component: {fileID: 1153600607}
   - component: {fileID: 1153600606}
   - component: {fileID: 1153600611}
   m_Layer: 0
@@ -1155,24 +1168,6 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!143 &1153600607
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1153600605}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 1
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1153600608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1185,10 +1180,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c89a1117c47fd246863bdb343bab76f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 1153600607}
   speed: 5
   jumpForce: 10
   currentSpeed: 0
+  rb: {fileID: 0}
+  canMove: 1
   Ganzuas: 1
 --- !u!212 &1153600609
 SpriteRenderer:
@@ -1986,6 +1982,7 @@ MonoBehaviour:
     - adios
   dialogueManager: {fileID: 495318787}
   Player: {fileID: 0}
+  InDialogue: 0
 --- !u!114 &1634247292
 MonoBehaviour:
   m_ObjectHideFlags: 0

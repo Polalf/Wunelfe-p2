@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Screen = UnityEngine.Screen;
 
 public class Cerraduras : MonoBehaviour
 {
@@ -13,13 +14,15 @@ public class Cerraduras : MonoBehaviour
     public GameObject Body;
     public float stop =0f;
     public GameObject Puerta;
-
+    private float MedioPantalla;
 
 
     bool inside = false;
 
     private void Start()
     {
+
+        MedioPantalla = Screen.width / 2 + Screen.height / 2;
         player = GameObject.FindGameObjectWithTag("Player");
         correctas = 0;
         Marc1.SetActive(true);

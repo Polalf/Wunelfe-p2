@@ -8,18 +8,22 @@ public class Player : MonoBehaviour
     //public Animator playerAnimator;
 
     [Header("Move")]
-    public CharacterController controller;
+    //public CharacterController controller;
     public float speed = 5f;
     private Vector3 playerVelocity;
     public float jumpForce = 10f;
     public float currentSpeed;
-    private bool InConversation;
+    //public bool InConversation;
+    public Rigidbody rb;
 
     //[Header("Life")]
     //public int maxLife;
     //public int currentLife;
     //public GameObject gameOver;
     ////public HealthBar healthBar;
+
+
+    public bool canMove = true;
 
 
     [Header("Items")]
@@ -34,7 +38,8 @@ public class Player : MonoBehaviour
         
         currentSpeed = speed;
         Ganzuas = 0;
-        controller = gameObject.GetComponent<CharacterController>();
+        rb = GetComponent<Rigidbody>();
+       // controller = gameObject.GetComponent<CharacterController>();
         //currentLife = maxLife;
         //healthBar.SetMaxHealth(maxLife);
         //canAttack = true;
@@ -43,18 +48,30 @@ public class Player : MonoBehaviour
     void Update()
     {
         //MOVE
-        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        controller.Move(move * Time.deltaTime * currentSpeed);
-        if (Input.GetAxis("Horizontal") < -0.001f)
+        if (canMove)
         {
-            transform.rotation = Quaternion.Euler(0, 180, 0);
+            //Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+            //controller.Move(move * Time.deltaTime * currentSpeed);
 
+            float x = Input.GetAxisRaw("Horizontal");
+            float z = Input.GetAxisRaw("Vertical");
+            transform.position += new Vector3(x, 0, z).normalized * currentSpeed * Time.deltaTime;
+
+            //Rigibody es recomendable usar SOLO cuando quieres aplicar mecanicas con FISICAS, si no es el caso NO USARLO PARA EL MOVIMIENTO
+
+            //if (Input.GetAxis("Horizontal") < -0.001f || Input.GetAxis("Horizontal") > 0.001f)
+            //{
+            //    rb.velocity += transform.right * Input.GetAxis("Horizontal") * currentSpeed;
+            //   // transform.rotation = Quaternion.Euler(0, 180, 0);
+
+            //}
+            //if (Input.GetAxis("Vertical")<- 0.001f || Input.GetAxis("Vertical") >0.001)
+            //{
+            //    rb.velocity += transform.forward * Input.GetAxis("Vertical") * currentSpeed;
+            //    //transform.rotation = Quaternion.Euler(0, 0, 0);
+            //}
         }
-        if (Input.GetAxis("Horizontal") > 0.001f)
-        {
-            transform.rotation = Quaternion.Euler(0, 0, 0);
-        }
-        //if(InConversation)
+        //if (InConversation)
         //{
         //    currentSpeed = 0;
         //}
@@ -62,7 +79,7 @@ public class Player : MonoBehaviour
         //{
         //    currentSpeed = speed;
         //}
-       
+
         //LIFE
         //if (currentLife <= 0)
         //{
@@ -72,26 +89,26 @@ public class Player : MonoBehaviour
         //if(currentLife > maxLife)
         //{
         //    currentLife = maxLife;
-        //}
-       
-      
+        // }
+
+
 
     }
     public void Stop(bool finished)
     {
         if (finished)
-        { 
-             currentSpeed = speed;
+        {
+            currentSpeed = speed;
         }
         else
         {
             currentSpeed = 0;
         }
-       
+
     }
-    
-  
-    
+
+
+
     //public void PlayerTakeDamage(int enemyDamage)
     //{
     //    currentLife -= enemyDamage;
@@ -104,8 +121,8 @@ public class Player : MonoBehaviour
 
     //    }
     //}
-    
-    
+
+
 
 
 
