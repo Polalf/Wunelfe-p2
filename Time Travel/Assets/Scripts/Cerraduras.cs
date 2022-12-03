@@ -12,7 +12,7 @@ public class Cerraduras : MonoBehaviour
     public KeyCode activar;
     private int correctas;
     public GameObject Body;
-    public float stop =0f;
+    
     public GameObject Puerta;
     
 
@@ -83,6 +83,7 @@ public class Cerraduras : MonoBehaviour
         {
             Debug.Log("listo");
             Puerta.GetComponent<Puertas>().abierta = true;
+            
             player.GetComponent<Player>().Stop(true);
             Body.SetActive(false);
 

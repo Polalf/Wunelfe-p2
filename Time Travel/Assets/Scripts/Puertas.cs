@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Puertas : MonoBehaviour
 {
+    [Header("Interaccion")]
     public GameObject Player;
     public GameObject keyCheck;
 
@@ -14,6 +15,7 @@ public class Puertas : MonoBehaviour
     public Transform pointB;
 
     public Dialogue dialogue;
+    public GameObject dialogueManager;
 
     public bool canEnter = false;
 
@@ -24,19 +26,21 @@ public class Puertas : MonoBehaviour
 
     private void Update()
     {
-        
+
         if (Input.GetKeyDown(Interactuar) && abierta && canEnter)
         {
             Debug.Log("oli");
             Entrar();
-            
+
         }
-        else if (Input.GetKeyDown(Interactuar) && !abierta)
+        else if (Input.GetKeyDown(Interactuar) && !abierta && canEnter)
         {
             if (Player.GetComponent<Player>().Ganzuas <= 0)
             {
                 Debug.Log("consigue Ganzuas");
-                FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+                //FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+                dialogueManager.GetComponent<DialogueManager>().DisplaySigOracion();
+                Player.GetComponent<Player>().Stop(true);
             }
             else if (Player.GetComponent<Player>().Ganzuas > 0)
             {
@@ -49,36 +53,15 @@ public class Puertas : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay(Collider collision)
+    private void OnTriggerEnter(Collider collision)
     {
 
-        if(collision.CompareTag("Player"))
+        if(collision.transform.tag == "Player")
         {
             canEnter = true;
             keyStart.SetActive(true);
-
-            //keyStart.SetActive(true);
-            //if (Input.GetKeyDown(Interactuar) && abierta)
-            //{
-            //    Entrar();
-
-            //}
-            //else if (Input.GetKeyDown(Interactuar) && !abierta)
-            //{
-            //    if (Player.GetComponent<Player>().Ganzuas <= 0)
-            //    {
-            //        Debug.Log("consigue Ganzuas");
-            //        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
-            //    }
-            //    else if (Player.GetComponent<Player>().Ganzuas > 0)
-            //    {
-            //        keyCheck.SetActive(true);
-            //        Debug.Log("cerradura");
-            //        Player.GetComponent<Player>().Stop(false);
-
-            //    }
-
-            //}
+            FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+            
 
 
         }
@@ -86,11 +69,15 @@ public class Puertas : MonoBehaviour
     }
     private void OnTriggerExit(Collider collision)
     {
-        canEnter = false;
-        if (collision.CompareTag("Player"))
+        if (collision.transform.tag == "Player")
         {
+            canEnter = false;
+            FindObjectOfType<DialogueManager>().end();
             keyStart.SetActive(false);
+
         }
+            
+        
 
         //if (collision.CompareTag("Player"))
         //{
