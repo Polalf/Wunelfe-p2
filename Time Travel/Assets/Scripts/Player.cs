@@ -8,13 +8,14 @@ public class Player : MonoBehaviour
     //public Animator playerAnimator;
 
     [Header("Move")]
-    //public CharacterController controller;
     public float speed = 5f;
-    private Vector3 playerVelocity;
-    public float jumpForce = 10f;
     public float currentSpeed;
+    public bool canMove = true;
     //public bool InConversation;
-    public Rigidbody rb;
+    //private Vector3 playerVelocity;
+    //public CharacterController controller;
+
+
 
     //[Header("Life")]
     //public int maxLife;
@@ -23,7 +24,7 @@ public class Player : MonoBehaviour
     ////public HealthBar healthBar;
 
 
-    public bool canMove = true;
+    
 
 
     [Header("Items")]
@@ -37,9 +38,9 @@ public class Player : MonoBehaviour
     {
         
         currentSpeed = speed;
-        Ganzuas = 0;
-        rb = GetComponent<Rigidbody>();
-       // controller = gameObject.GetComponent<CharacterController>();
+        //Ganzuas = 0;
+        //rb = GetComponent<Rigidbody>();
+        //controller = gameObject.GetComponent<CharacterController>();
         //currentLife = maxLife;
         //healthBar.SetMaxHealth(maxLife);
         //canAttack = true;

@@ -14,7 +14,7 @@ public class Cerraduras : MonoBehaviour
     public GameObject Body;
     public float stop =0f;
     public GameObject Puerta;
-    private float MedioPantalla;
+    
 
 
     bool inside = false;
@@ -22,7 +22,7 @@ public class Cerraduras : MonoBehaviour
     private void Start()
     {
 
-        MedioPantalla = Screen.width / 2 + Screen.height / 2;
+        
         player = GameObject.FindGameObjectWithTag("Player");
         correctas = 0;
         Marc1.SetActive(true);
