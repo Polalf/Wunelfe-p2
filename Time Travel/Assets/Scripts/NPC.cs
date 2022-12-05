@@ -164,13 +164,14 @@ public class NPC : MonoBehaviour
 
         Vector2 dist = new Vector2(CurrentTarget.position.x, CurrentTarget.position.z) - new Vector2(transform.position.x, transform.position.z);
         dist.Normalize();
+        
         float xMove = dist.x;
         float zMove = dist.y;
 
-        xMove = zMove > xMove ? xMove : 0;
-        zMove = zMove < xMove ? zMove : 0;
-       
+        xMove = Mathf.Abs(zMove) < Mathf.Abs(xMove) ? xMove : 0;
+        zMove = Mathf.Abs(zMove) > Mathf.Abs(xMove) ? zMove : 0;
 
+        Debug.Log(dist);
 
         //animator 
         if (zMove < 0)
