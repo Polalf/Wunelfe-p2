@@ -7,7 +7,7 @@ public class NPC : MonoBehaviour
     [Header("Move")]
     public float speed;
     public float currentSpeed;
-    public Transform PointA, PointB, PointC;
+    public Transform PointA, PointB, PointC, CurrentTarget;
     public bool Move;
     public int Target;
     public float TiempoEspera;
@@ -25,6 +25,7 @@ public class NPC : MonoBehaviour
 
     private void Start()
     {
+        
         Ida = true;
         Target = 1;
         Espera = TiempoEspera;
@@ -78,7 +79,7 @@ public class NPC : MonoBehaviour
 
             }
         }
-        if(InDialogue)
+        if (InDialogue)
         {
             currentSpeed = 0;
         }
@@ -87,11 +88,25 @@ public class NPC : MonoBehaviour
             currentSpeed = speed;
         }
 
-
-        // move
-        if( Target == 1 && Move)
+        if (Target == 1)
         {
-            transform.position = Vector3.MoveTowards(transform.position, PointA.position, currentSpeed * Time.deltaTime);
+            CurrentTarget.position = PointA.position;
+        }
+        else if (Target == 2)
+        {
+            CurrentTarget.position = PointB.position;
+        }
+        else if (Target == 3)
+        {
+            CurrentTarget.position = PointC.position;
+        }
+            
+        // move
+
+        if ( Target == 1 && Move)
+        {
+           
+            transform.position = Vector3.MoveTowards(transform.position, CurrentTarget.position, currentSpeed * Time.deltaTime);
             if(transform.position == PointA.position)
             {
                 Ida = true;
@@ -103,7 +118,7 @@ public class NPC : MonoBehaviour
         }
         else if (Target == 2 && Move)
         {
-            transform.position = Vector3.MoveTowards(transform.position, PointB.position, currentSpeed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, CurrentTarget.position, currentSpeed * Time.deltaTime);
             if (Ida)
             {
                 if (transform.position == PointB.position)
@@ -128,7 +143,7 @@ public class NPC : MonoBehaviour
         }
         else if (Target == 3 && Move)
         {
-            transform.position = Vector3.MoveTowards(transform.position, PointC.position, currentSpeed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, CurrentTarget.position, currentSpeed * Time.deltaTime);
             if (transform.position == PointC.position)
             {
                 Ida = false;
@@ -145,6 +160,39 @@ public class NPC : MonoBehaviour
         else
         {
             Espera += Time.deltaTime;
+        }
+
+        Vector2 dist = new Vector2(CurrentTarget.position.x, CurrentTarget.position.z) - new Vector2(transform.position.x, transform.position.z);
+        dist.Normalize();
+        float xMove = dist.x;
+        float zMove = dist.y;
+
+        xMove = zMove > xMove ? xMove : 0;
+        zMove = zMove < xMove ? zMove : 0;
+       
+
+
+        //animator 
+        if (zMove < 0)
+        {
+            Debug.Log("adelante");
+            // mirar adelante
+        } 
+        else if (zMove > 0)
+        {
+            Debug.Log("atras");
+            // mirar atras
+        }
+        if (xMove < 0)
+        {
+            Debug.Log("izquierda");
+            // izquierda
+        }
+        else if (xMove > 0)
+        {
+            Debug.Log("derecha");
+            // derecha
+
         }
     }
     

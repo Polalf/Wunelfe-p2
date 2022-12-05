@@ -9,9 +9,16 @@ public class SwitchCamera : MonoBehaviour
     public Camera cam2;
     public KeyCode ChangeCam;
     private bool itsPresent;
-    
+    public GameObject Past;
+    public GameObject Present;
 
-   
+    private void Start()
+    {
+        Past = GameObject.FindGameObjectWithTag("Past");
+        Present = GameObject.FindGameObjectWithTag("Present");
+    }
+
+
 
     private void Update()
     {
@@ -27,6 +34,8 @@ public class SwitchCamera : MonoBehaviour
         {
             cam1.enabled = true;
             cam2.enabled = false;
+            Present.SetActive(true);
+
         }
         else
         {

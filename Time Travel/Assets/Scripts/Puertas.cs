@@ -9,7 +9,7 @@ public class Puertas : MonoBehaviour
     public GameObject Player;
     public GameObject keyCheck;
 
-    public GameObject keyStart;
+    public GameObject KeyInteraction;
     public KeyCode Interactuar;
     public bool abierta = false;
     public Transform pointB;
@@ -59,7 +59,7 @@ public class Puertas : MonoBehaviour
         if(collision.transform.tag == "Player")
         {
             canEnter = true;
-            keyStart.SetActive(true);
+            KeyInteraction.SetActive(true);
             FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
             
 
@@ -73,7 +73,7 @@ public class Puertas : MonoBehaviour
         {
             canEnter = false;
             FindObjectOfType<DialogueManager>().end();
-            keyStart.SetActive(false);
+            KeyInteraction.SetActive(false);
 
         }
             

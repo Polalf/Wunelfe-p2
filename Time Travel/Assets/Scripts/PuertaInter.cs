@@ -6,6 +6,7 @@ using UnityEngine;
 public class PuertaInter : MonoBehaviour
 {
     public GameObject Player;
+    public GameObject KeyInteraction;
     public KeyCode Salir;
     public Transform Salida;
     private bool canExit;
@@ -24,12 +25,14 @@ public class PuertaInter : MonoBehaviour
     {
         if(TimeCan)
         {
+            KeyInteraction.SetActive(true);
             canExit = true;
         }
         
     }
     private void OnTriggerExit(Collider collision)
     {
+        KeyInteraction.SetActive(false);
         canExit = false;
     }
     // Update is called once per frame

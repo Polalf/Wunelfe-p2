@@ -4,19 +4,37 @@ using UnityEngine;
 
 public class ChangeAmbs : MonoBehaviour
 {
-    public bool Present;
-    private bool itsPresent;
+   
     public KeyCode changeKey;
     public GameObject otherCamera;
 
+    public GameObject Past,Present;
+    public bool InPast;
+
+    private void Start()
+    {
+        // Past = GameObject.FindGameObjectWithTag("Past");
+        // Present = GameObject.FindGameObjectWithTag("Present");
+    }
     void Update()
     {
-        if(Input.GetKeyDown(changeKey))
+        
+        if(!InPast) // Estoy en el presente
+        {
+            Present.SetActive(true);
+            Past.SetActive(false);
+        }
+        else
+        {
+            Present.SetActive(false);
+            Past.SetActive(true);
+        }
+
+        if (Input.GetKeyDown(changeKey))
         {
             gameObject.SetActive(false);
             otherCamera.SetActive(true);
-
-
+            // InPast = !InPast;
         }
     }
 }

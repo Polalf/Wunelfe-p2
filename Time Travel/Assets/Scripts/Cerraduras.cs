@@ -62,12 +62,17 @@ public class Cerraduras : MonoBehaviour
 
 
         }
-        if (!inside)
+        else if (!inside)
         {
             if (Input.GetKeyDown(activar))
             {
                 player.GetComponent<Player>().Ganzuas -= 1;
             }
+        }
+        if(player.GetComponent<Player>().Ganzuas<= 0)
+        {
+            Body.SetActive(false);
+
         }
 
         if (moveX == -1)
