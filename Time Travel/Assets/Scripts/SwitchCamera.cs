@@ -9,6 +9,9 @@ public class SwitchCamera : MonoBehaviour
     public Camera cam2;
     public KeyCode ChangeCam;
     private bool itsPresent;
+    
+
+   
 
     private void Update()
     {
