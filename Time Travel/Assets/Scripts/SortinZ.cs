@@ -30,7 +30,7 @@ public class SortinZ : MonoBehaviour
                 if (transform.position.x - buildingSize <= Player.transform.position.x &&
                     transform.position.x + buildingSize >= Player.transform.position.x)
                 {
-                    sr.color = new Color(1, 1, 1, (float)0.3);
+                    sr.color = new Color(1, 1, 1, (float)0.2);
                 }
                 else
                 {
