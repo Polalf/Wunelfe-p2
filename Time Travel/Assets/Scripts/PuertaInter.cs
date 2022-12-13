@@ -18,6 +18,7 @@ public class PuertaInter : MonoBehaviour
 
     private void Start()
     {
+        
         Player = GameObject.FindGameObjectWithTag("Player");
     }
 

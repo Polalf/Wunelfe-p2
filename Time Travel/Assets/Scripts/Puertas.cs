@@ -22,6 +22,7 @@ public class Puertas : MonoBehaviour
     private void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
+       
     }
 
     private void Update()

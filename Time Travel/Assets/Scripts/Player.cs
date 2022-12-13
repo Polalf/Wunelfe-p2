@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 
 public class Player : MonoBehaviour
 {
@@ -22,10 +22,6 @@ public class Player : MonoBehaviour
     //public int currentLife;
     //public GameObject gameOver;
     ////public HealthBar healthBar;
-
-
-    
-
 
     [Header("Items")]
     public int Ganzuas;

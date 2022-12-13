@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Ganzuas : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class Ganzuas : MonoBehaviour
     private bool canPick;
     public GameObject Player;
     
+    [SerializeField] private Text Ganzuastext;
     private void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
@@ -38,6 +40,7 @@ public class Ganzuas : MonoBehaviour
                 Player.GetComponent<Player>().Ganzuas += 1;
                 gameObject.SetActive(false);
                 KeyInteraction.SetActive(false);
+                Ganzuastext.text = "Ganzuas: "+ Player.GetComponent<Player>().Ganzuas;
             }
         }
     }
