@@ -248,7 +248,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 67042909, guid: 478bb12a001039641a4b7db1a3ffefe3, type: 3}
-  m_Color: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+  m_Color: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -280,45 +280,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2794251221282355584}
     m_Modifications:
-    - target: {fileID: 2188465281442668863, guid: 05a6f7a10034096429ba46d7674ccebf, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2188465282276982880, guid: 05a6f7a10034096429ba46d7674ccebf, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2188465282385585296, guid: 05a6f7a10034096429ba46d7674ccebf, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 2188465282736633570, guid: 05a6f7a10034096429ba46d7674ccebf, type: 3}
       propertyPath: m_Name
       value: cerradura
       objectReference: {fileID: 0}
-    - target: {fileID: 2188465282736633570, guid: 05a6f7a10034096429ba46d7674ccebf, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2188465282736633570, guid: 05a6f7a10034096429ba46d7674ccebf, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2188465282736633572, guid: 05a6f7a10034096429ba46d7674ccebf, type: 3}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2188465282736633572, guid: 05a6f7a10034096429ba46d7674ccebf, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2188465282736633572, guid: 05a6f7a10034096429ba46d7674ccebf, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2188465282736633572, guid: 05a6f7a10034096429ba46d7674ccebf, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2188465282736633572, guid: 05a6f7a10034096429ba46d7674ccebf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -360,22 +328,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2188465282736633572, guid: 05a6f7a10034096429ba46d7674ccebf, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2188465282766149363, guid: 05a6f7a10034096429ba46d7674ccebf, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2188465282791851704, guid: 05a6f7a10034096429ba46d7674ccebf, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 2188465282791851708, guid: 05a6f7a10034096429ba46d7674ccebf, type: 3}
       propertyPath: Puerta
       value: 
-      objectReference: {fileID: 2794251221627591077}
+      objectReference: {fileID: 2794251221282355585}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05a6f7a10034096429ba46d7674ccebf, type: 3}
 --- !u!1 &4078520986462275619 stripped

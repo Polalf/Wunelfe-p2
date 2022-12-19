@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class NPC : MonoBehaviour
 {
+    public bool Enemy;
+
     [Header("Move")]
     public float speed;
     public float currentSpeed;
@@ -13,6 +15,7 @@ public class NPC : MonoBehaviour
     public float TiempoEspera;
     public float Espera;
     private bool Ida;
+    public GameObject luzAd, luzAt, luzDe, luzIz;
 
 
     [Header("Interaccion")]
@@ -171,30 +174,65 @@ public class NPC : MonoBehaviour
         xMove = Mathf.Abs(zMove) < Mathf.Abs(xMove) ? xMove : 0;
         zMove = Mathf.Abs(zMove) > Mathf.Abs(xMove) ? zMove : 0;
 
-        Debug.Log(dist);
+        //Debug.Log(dist);
 
         //animator 
         if (zMove < 0)
         {
             Debug.Log("adelante");
             // mirar adelante
-        } 
+            if(Enemy)
+            {
+                luzAd.SetActive(true);
+                luzAt.SetActive(false);
+                luzDe.SetActive(false);
+                luzIz.SetActive(false);
+
+            }
+            
+
+        }
         else if (zMove > 0)
         {
             Debug.Log("atras");
             // mirar atras
+            if(Enemy)
+            {
+                luzAd.SetActive(false);
+                luzAt.SetActive(true);
+                luzDe.SetActive(false);
+                luzIz.SetActive(false);
+            }
+            
         }
         if (xMove < 0)
         {
             Debug.Log("izquierda");
             // izquierda
+            if(Enemy)
+            {
+                luzAd.SetActive(false);
+                luzAt.SetActive(false);
+                luzDe.SetActive(false);
+                luzIz.SetActive(true);
+            }
+            
         }
         else if (xMove > 0)
         {
             Debug.Log("derecha");
             // derecha
+            if(Enemy)
+            { 
+                luzAd.SetActive(false);
+                luzAt.SetActive(false);
+                luzDe.SetActive(true);
+                luzIz.SetActive(false);
 
+
+            }
+           
         }
     }
-    
+   
 }

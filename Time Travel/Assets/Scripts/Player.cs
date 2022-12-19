@@ -17,17 +17,17 @@ public class Player : MonoBehaviour
 
 
 
-    //[Header("Life")]
-    //public int maxLife;
-    //public int currentLife;
-    //public GameObject gameOver;
+    [Header("Life")]
+    public int maxLife;
+    public int currentLife;
+    public GameObject gameOver;
     ////public HealthBar healthBar;
 
     [Header("Items")]
     public int Ganzuas;
 
-    //[Header("Dialogue")]
-    //public Dialogue dialogue;
+    [Header("Dialogue")]
+    public Dialogue dialogue;
 
 
     private void Start()
@@ -35,9 +35,9 @@ public class Player : MonoBehaviour
         
         currentSpeed = speed;
         //Ganzuas = 0;
-        //rb = GetComponent<Rigidbody>();
-        //controller = gameObject.GetComponent<CharacterController>();
-        //currentLife = maxLife;
+
+
+        currentLife = maxLife;
         //healthBar.SetMaxHealth(maxLife);
         //canAttack = true;
     }
@@ -78,15 +78,15 @@ public class Player : MonoBehaviour
         //}
 
         //LIFE
-        //if (currentLife <= 0)
-        //{
-        //    gameObject.SetActive(true);
+        if (currentLife <= 0)
+        {
+            gameObject.SetActive(true);
 
-        //}
-        //if(currentLife > maxLife)
-        //{
-        //    currentLife = maxLife;
-        // }
+        }
+        if (currentLife > maxLife)
+        {
+            currentLife = maxLife;
+        }
 
 
 

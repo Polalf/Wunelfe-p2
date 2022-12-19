@@ -7,8 +7,6 @@ public class ActivarUI : MonoBehaviour
     public GameObject[] Ui;
 
     public bool Activar;
-    void Update()
-    {
-       
-    }
+
+
 }

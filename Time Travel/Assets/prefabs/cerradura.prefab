@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2188465281442668862}
   - component: {fileID: 2188465281442668849}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: base 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 2188465282276982884}
   - component: {fileID: 2188465282276982885}
   - component: {fileID: 2188465282276982882}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: marc2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 2188465282385585300}
   - component: {fileID: 2188465282385585301}
   - component: {fileID: 2188465282385585298}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: marc3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -364,13 +364,13 @@ GameObject:
   m_Component:
   - component: {fileID: 2188465282736633572}
   - component: {fileID: 2188465282736633573}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: cerradura
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2188465282736633572
 Transform:
   m_ObjectHideFlags: 0
@@ -380,7 +380,7 @@ Transform:
   m_GameObject: {fileID: 2188465282736633570}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2188465281442668862}
@@ -451,7 +451,7 @@ GameObject:
   - component: {fileID: 2188465282766149365}
   - component: {fileID: 2188465282766149364}
   - component: {fileID: 2188465282766149367}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: marc1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -584,7 +584,7 @@ GameObject:
   - component: {fileID: 2188465282791851709}
   - component: {fileID: 2188465282791851706}
   - component: {fileID: 2188465282791851708}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: rueda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
