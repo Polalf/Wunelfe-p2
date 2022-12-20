@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6faa144dd9637e943be51fb311bbb365
+guid: 9ff77ccae749cd348b66d56e910f577f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Futuro 5
+      name: Puerta Fut 2
       rect:
         serializedVersion: 2
-        x: 309
-        y: 258
-        width: 1262
-        height: 1713
+        x: 110
+        y: 100
+        width: 370
+        height: 510
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22b792f1ccbee434c99b9770db3ebb73
-      internalID: 1710842183
+      spriteID: 5fb06ac2331d69b49b217abfe5ac31e5
+      internalID: -292924199
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Futuro 6
+      name: Puerta Fut 1
       rect:
         serializedVersion: 2
-        x: 1769
-        y: 258
-        width: 1133
-        height: 1913
+        x: 540
+        y: 100
+        width: 370
+        height: 510
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,50 +139,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e51f00239c1cfb47be14a294544c7d3
-      internalID: -1521655762
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Futuro 7
-      rect:
-        serializedVersion: 2
-        x: 3018
-        y: 258
-        width: 1263
-        height: 1833
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad5eb757f8b9b89428fe70171f52c2d7
-      internalID: -2036142898
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Futuro 8
-      rect:
-        serializedVersion: 2
-        x: 4648
-        y: 258
-        width: 1274
-        height: 2183
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b1e09b167ccf3b0429162211a0bc7ec4
-      internalID: 1118698408
+      spriteID: 5f320541bf1b7604b8be04b23acab65c
+      internalID: 1689197142
       vertices: []
       indices: 
       edges: []
@@ -198,10 +156,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Futuro 7: -2036142898
-      Futuro 8: 1118698408
-      Futuro 5: 1710842183
-      Futuro 6: -1521655762
+      Puerta Fut 1: 1689197142
+      Puerta Fut 2: -292924199
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
