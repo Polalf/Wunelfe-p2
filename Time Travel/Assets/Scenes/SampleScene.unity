@@ -1693,7 +1693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5183994848554119302, guid: 069fff9678d7e1b4eaeea99650920e8e, type: 3}
       propertyPath: edificios
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6800375068204225788, guid: 069fff9678d7e1b4eaeea99650920e8e, type: 3}
       propertyPath: m_Color.a
@@ -9044,7 +9044,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1612678355
 Transform:
   m_ObjectHideFlags: 0
