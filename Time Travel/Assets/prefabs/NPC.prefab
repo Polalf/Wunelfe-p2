@@ -258,7 +258,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 223a8c8645879bd4fa6a97aa966d85d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemi: 0
+  Enemy: 0
+  NpcAnimator: {fileID: 0}
   speed: 3
   currentSpeed: 0
   PointA: {fileID: 7094674185256476073}
@@ -267,7 +268,7 @@ MonoBehaviour:
   CurrentTarget: {fileID: 1606324050}
   Move: 0
   Target: 0
-  TiempoEspera: 2
+  TiempoEspera: 1.5
   Espera: 0
   luzAd: {fileID: 0}
   luzAt: {fileID: 0}

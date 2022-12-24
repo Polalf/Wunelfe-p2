@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemies : MonoBehaviour
 {
+    public Animator EnemyAnimator;
     public GameObject Player;
     public float speed;
     public GameObject luzAd, luzAt, luzDe, luzIz;
@@ -31,6 +32,9 @@ public class Enemies : MonoBehaviour
 
         if (zMove < 0)
         {
+            
+            EnemyAnimator.SetFloat("ZSpeed", 1);
+            EnemyAnimator.SetFloat("XSpeed", 0);
             Debug.Log("adelante");
             // mirar adelante
             luzAd.SetActive(true);
@@ -41,6 +45,8 @@ public class Enemies : MonoBehaviour
         }
         else if (zMove > 0)
         {
+            EnemyAnimator.SetFloat("ZSpeed", -1);
+            EnemyAnimator.SetFloat("XSpeed", 0);
             Debug.Log("atras");
             // mirar atras
             luzAd.SetActive(false);
@@ -50,6 +56,8 @@ public class Enemies : MonoBehaviour
         }
         if (xMove < 0)
         {
+            EnemyAnimator.SetFloat("XSpeed",- 1);
+            EnemyAnimator.SetFloat("ZSpeed", 0);
             Debug.Log("izquierda");
             // izquierda
             luzAd.SetActive(false);
@@ -59,6 +67,8 @@ public class Enemies : MonoBehaviour
         }
         else if (xMove > 0)
         {
+            EnemyAnimator.SetFloat("XSpeed", 1);
+            EnemyAnimator.SetFloat("ZSpeed", 0);
             Debug.Log("derecha");
             // derecha
             luzAd.SetActive(false);

@@ -5,6 +5,7 @@ using UnityEngine;
 public class NPC : MonoBehaviour
 {
     public bool Enemy;
+    public Animator NpcAnimator;
 
     [Header("Move")]
     public float speed;
@@ -129,6 +130,7 @@ public class NPC : MonoBehaviour
                     Target = 3;
                     Move = false;
                     Espera = 0;
+
                 }
 
             }
@@ -147,6 +149,7 @@ public class NPC : MonoBehaviour
         else if (Target == 3 && Move)
         {
             transform.position = Vector3.MoveTowards(transform.position, CurrentTarget.position, currentSpeed * Time.deltaTime);
+
             if (transform.position == PointC.position)
             {
                 Ida = false;
@@ -180,57 +183,81 @@ public class NPC : MonoBehaviour
         if (zMove < 0)
         {
             Debug.Log("adelante");
-            // mirar adelante
-            if(Enemy)
+            if(Move)
             {
+                NpcAnimator.SetFloat("ZSpeed", 1);
+                NpcAnimator.SetFloat("XSpeed", 0);
+                if(Enemy)
+                {
                 luzAd.SetActive(true);
                 luzAt.SetActive(false);
                 luzDe.SetActive(false);
                 luzIz.SetActive(false);
 
+                }
+
             }
+            
             
 
         }
         else if (zMove > 0)
         {
+            if (Move)
+            {
+                NpcAnimator.SetFloat("ZSpeed", -1);
+                NpcAnimator.SetFloat("XSpeed", 0);
+                if(Enemy)
+                {
+                    luzAd.SetActive(false);
+                    luzAt.SetActive(true);
+                    luzDe.SetActive(false);
+                    luzIz.SetActive(false);
+                }
+            }
             Debug.Log("atras");
             // mirar atras
-            if(Enemy)
-            {
-                luzAd.SetActive(false);
-                luzAt.SetActive(true);
-                luzDe.SetActive(false);
-                luzIz.SetActive(false);
-            }
+            
             
         }
         if (xMove < 0)
         {
+            if (Move)
+            {
+                NpcAnimator.SetFloat("XSpeed", -1);
+                NpcAnimator.SetFloat("ZSpeed", 0);
+                if (Enemy)
+                {
+                    luzAd.SetActive(false);
+                    luzAt.SetActive(false);
+                    luzDe.SetActive(false);
+                    luzIz.SetActive(true);
+                }
+            }
             Debug.Log("izquierda");
             // izquierda
-            if(Enemy)
-            {
-                luzAd.SetActive(false);
-                luzAt.SetActive(false);
-                luzDe.SetActive(false);
-                luzIz.SetActive(true);
-            }
+            
             
         }
         else if (xMove > 0)
         {
+            if (Move)
+            {
+                NpcAnimator.SetFloat("XSpeed", 1);
+                NpcAnimator.SetFloat("ZSpeed",0);
+                if (Enemy)
+                {
+                    luzAd.SetActive(false);
+                    luzAt.SetActive(false);
+                    luzDe.SetActive(true);
+                    luzIz.SetActive(false);
+
+
+                }
+            }
             Debug.Log("derecha");
             // derecha
-            if(Enemy)
-            { 
-                luzAd.SetActive(false);
-                luzAt.SetActive(false);
-                luzDe.SetActive(true);
-                luzIz.SetActive(false);
-
-
-            }
+            
            
         }
     }
