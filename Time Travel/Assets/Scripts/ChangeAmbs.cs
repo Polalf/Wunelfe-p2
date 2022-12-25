@@ -7,7 +7,7 @@ public class ChangeAmbs : MonoBehaviour
    
     public KeyCode changeKey;
     public GameObject otherCamera;
-
+    
     public GameObject Past,Present;
     public bool InPast;
 
@@ -23,6 +23,7 @@ public class ChangeAmbs : MonoBehaviour
         {
             Present.SetActive(true);
             Past.SetActive(false);
+
         }
         else
         {
