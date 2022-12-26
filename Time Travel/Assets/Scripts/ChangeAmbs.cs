@@ -7,7 +7,7 @@ public class ChangeAmbs : MonoBehaviour
    
     public KeyCode changeKey;
     public GameObject otherCamera;
-    
+    public GameObject CdBar;
     public GameObject Past,Present;
     public bool InPast;
 
@@ -23,12 +23,13 @@ public class ChangeAmbs : MonoBehaviour
         {
             Present.SetActive(true);
             Past.SetActive(false);
-
+            CdBar.GetComponent<VIajeTiempo>().PastOrFut(false);
         }
         else
         {
             Present.SetActive(false);
             Past.SetActive(true);
+            CdBar.GetComponent<VIajeTiempo>().PastOrFut(true);
         }
 
         if (Input.GetKeyDown(changeKey))
@@ -37,5 +38,6 @@ public class ChangeAmbs : MonoBehaviour
             otherCamera.SetActive(true);
             // InPast = !InPast;
         }
+
     }
 }
