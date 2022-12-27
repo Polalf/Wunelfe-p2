@@ -19,23 +19,22 @@ public class ChangeAmbs : MonoBehaviour
     }
     void Update()
     {
-       // if(canChange)
+       //
         {
             if (!InPast) // Estoy en el presente
             {
                 Present.SetActive(true);
                 Past.SetActive(false);
-                //CdBar.GetComponent<VIajeTiempo>().PastOrFut(false);
-                //canChange = true;
+                
 
             }
             else
             {
                 Present.SetActive(false);
                 Past.SetActive(true);
-                //CdBar.GetComponent<VIajeTiempo>().PastOrFut(true);
-                //CdBar.GetComponent<VIajeTiempo>().CurrentCharge = 0;
-                //canChange = false;
+                
+
+
             }
             if (Input.GetKeyDown(changeKey))
             {
@@ -45,7 +44,8 @@ public class ChangeAmbs : MonoBehaviour
             }
         }
         
-
+        
+        
         
 
     }
