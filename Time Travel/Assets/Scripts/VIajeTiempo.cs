@@ -10,7 +10,12 @@ public class VIajeTiempo : MonoBehaviour
     private float TimerCd;
     public float MaxCd;
     private bool AddCharge;
-    //public CoolBar;
+    public CdBar CoolBar;
+    private void Start()
+    {
+        CurrentCharge = MaxCharge;
+        CoolBar.SetMaxCharge(MaxCharge);
+    }
     private void Update()
     {
         if (TimerCd >= MaxCd)
@@ -26,11 +31,11 @@ public class VIajeTiempo : MonoBehaviour
     { 
         if(InPast)
         {
-          IniciarCooldown();
+            IniciarCooldown();
         }
         else
         {
-            //CoolBar = MaxCharge;
+           CurrentCharge = MaxCharge;
         }
     }
     public void IniciarCooldown()

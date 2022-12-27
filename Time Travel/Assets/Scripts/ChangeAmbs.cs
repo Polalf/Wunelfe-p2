@@ -10,6 +10,7 @@ public class ChangeAmbs : MonoBehaviour
     public GameObject CdBar;
     public GameObject Past,Present;
     public bool InPast;
+    public bool canChange;
 
     private void Start()
     {
@@ -18,26 +19,34 @@ public class ChangeAmbs : MonoBehaviour
     }
     void Update()
     {
-        
-        if(!InPast) // Estoy en el presente
+       // if(canChange)
         {
-            Present.SetActive(true);
-            Past.SetActive(false);
-            CdBar.GetComponent<VIajeTiempo>().PastOrFut(false);
-        }
-        else
-        {
-            Present.SetActive(false);
-            Past.SetActive(true);
-            CdBar.GetComponent<VIajeTiempo>().PastOrFut(true);
-        }
+            if (!InPast) // Estoy en el presente
+            {
+                Present.SetActive(true);
+                Past.SetActive(false);
+                //CdBar.GetComponent<VIajeTiempo>().PastOrFut(false);
+                //canChange = true;
 
-        if (Input.GetKeyDown(changeKey))
-        {
-            gameObject.SetActive(false);
-            otherCamera.SetActive(true);
-            // InPast = !InPast;
+            }
+            else
+            {
+                Present.SetActive(false);
+                Past.SetActive(true);
+                //CdBar.GetComponent<VIajeTiempo>().PastOrFut(true);
+                //CdBar.GetComponent<VIajeTiempo>().CurrentCharge = 0;
+                //canChange = false;
+            }
+            if (Input.GetKeyDown(changeKey))
+            {
+                gameObject.SetActive(false);
+                otherCamera.SetActive(true);
+                // InPast = !InPast;
+            }
         }
+        
+
+        
 
     }
 }
