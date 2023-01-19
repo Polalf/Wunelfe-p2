@@ -206,7 +206,8 @@ public class NPC : MonoBehaviour
             if (Move)
             {
                 NpcAnimator.SetFloat("ZSpeed", -1);
-                NpcAnimator.SetFloat("XSpeed", 0);
+                NpcAnimator.SetFloat("XSpeed", 0)
+                    ;
                 if(Enemy)
                 {
                     luzAd.SetActive(false);

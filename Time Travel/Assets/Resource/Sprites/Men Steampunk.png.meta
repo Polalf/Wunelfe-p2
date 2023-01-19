@@ -1,0 +1,738 @@
+fileFormatVersion: 2
+guid: 585b846ba6950ad48aacf86606e848c8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Men Steampunk11
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1180
+        width: 180
+        height: 280
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee584698c7ba07f48ac098d95c249890
+      internalID: -2059298681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Steampunk12
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1160
+        width: 180
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079738a602684c349b2d8a1cd66a714a
+      internalID: 909836344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Steampunk13
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1180
+        width: 160
+        height: 280
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2660f22cc0b71cd4bb74a152f9c775ca
+      internalID: 1900370206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Steampunk14
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 1170
+        width: 160
+        height: 290
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b020da9ff0ed6429c1367f9ebc5df5
+      internalID: 1239071221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Steampunk15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1180
+        width: 160
+        height: 280
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d166b68c1891e2f4d914ce2def0e25cd
+      internalID: -74330433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Steampunk16
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 1190
+        width: 180
+        height: 270
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8f994f6e2b8314fb5989ddb90be48f
+      internalID: -1866586919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Steampunk17
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 1160
+        width: 180
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e853d37367f9fcd49ad7c92e8b8c2644
+      internalID: -358510099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Steampunk21
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 820
+        width: 180
+        height: 290
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65aec3c62454fce4595068081092ab57
+      internalID: 1214565156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Steampunk22
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 800
+        width: 180
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb5dc6a5470a8b47b041130692167e2
+      internalID: 218476379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Steampunk23
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 820
+        width: 190
+        height: 290
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a8f37b2c70343449f7914263128475
+      internalID: 798524474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Steampunk24
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 810
+        width: 190
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493ccaceaf27fb243af2553ef5892645
+      internalID: 43231198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Steampunk25
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 820
+        width: 190
+        height: 290
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51bf940d60a98df4fb166b45c804b25c
+      internalID: -1983305976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Steampunk26
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 830
+        width: 180
+        height: 280
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27a531bd3fbaacb47b8470d045ad4488
+      internalID: 309181694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Steampunk27
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 800
+        width: 180
+        height: 320
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5617eea93a716dd4f81cb40ef0f343a0
+      internalID: 658702366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Steampunk31
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 370
+        width: 180
+        height: 370
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c79a2398432a534da39c1b6c88c3c8b
+      internalID: 2051933562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Steampunk32
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 350
+        width: 180
+        height: 390
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6538d396c695e7b4bab5c8db43f320a8
+      internalID: -1712002279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Steampunk33
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 370
+        width: 170
+        height: 380
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45fca7f3f067e441bff73e7acc76089
+      internalID: 2088227405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Steampunk34
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 360
+        width: 170
+        height: 390
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6094bc44a54684f4f888726e1bcccaaa
+      internalID: -508432322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Steampunk35
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 380
+        width: 180
+        height: 360
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbe9833de05d79b4e8cf4aaf9295806c
+      internalID: 2057481517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Steampunk36
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 350
+        width: 180
+        height: 390
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0aaf6114c30a9e40abc9adecd2a5139
+      internalID: 1870381706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Steampunk37
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 370
+        width: 170
+        height: 380
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca26ff7441092d444817707798412308
+      internalID: 1862476565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Steampunk41
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 60
+        width: 180
+        height: 280
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0721e11c27bbdb4cbf2a93571e2a741
+      internalID: 35446734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Steampunk42
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 40
+        width: 180
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5207b885cf7505044ab8dfd051ee9782
+      internalID: 714780332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Steampunk43
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 60
+        width: 160
+        height: 280
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f83216077bb81c14e88f8e5678582fe4
+      internalID: -897302555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Steampunk44
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 50
+        width: 160
+        height: 290
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c2873328040354419bd408c1bd540d6
+      internalID: 2058828769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Steampunk45
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 60
+        width: 160
+        height: 280
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7442fb20d5065a1468797c3db1c3ca71
+      internalID: -836586125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Steampunk46
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 60
+        width: 180
+        height: 270
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c240d83aff730e44a6a630d637c71b6
+      internalID: 284908565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Steampunk47
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 30
+        width: 180
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef59821ace6a90740a0411ae327d1fe1
+      internalID: -1233812327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Men Steampunk24: 43231198
+      Men Steampunk13: 1900370206
+      Men Steampunk26: 309181694
+      Men Steampunk44: 2058828769
+      Men Steampunk35: 2057481517
+      Men Steampunk41: 35446734
+      Men Steampunk32: -1712002279
+      Men Steampunk17: -358510099
+      Men Steampunk22: 218476379
+      Men Steampunk46: 284908565
+      Men Steampunk14: 1239071221
+      Men Steampunk11: -2059298681
+      Men Steampunk31: 2051933562
+      Men Steampunk45: -836586125
+      Men Steampunk36: 1870381706
+      Men Steampunk37: 1862476565
+      Men Steampunk12: 909836344
+      Men Steampunk21: 1214565156
+      Men Steampunk42: 714780332
+      Men Steampunk27: 658702366
+      Men Steampunk25: -1983305976
+      Men Steampunk47: -1233812327
+      Men Steampunk43: -897302555
+      Men Steampunk15: -74330433
+      Men Steampunk16: -1866586919
+      Men Steampunk34: -508432322
+      Men Steampunk33: 2088227405
+      Men Steampunk23: 798524474
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,738 @@
+fileFormatVersion: 2
+guid: 5fa2708ebd9266b459ab67c421e22153
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Men Cyber 11
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1180
+        width: 180
+        height: 280
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8214d78e9a73d6847a2df5ae21bd7e82
+      internalID: -639065712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Cyber12
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1160
+        width: 180
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 633ff1d12b913cc4b9b852a6b5c64bfb
+      internalID: -441309056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Cyber13
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1180
+        width: 160
+        height: 280
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb91d4ff7823236468fb27b96f3b82b8
+      internalID: 918680048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Cyber14
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 1170
+        width: 160
+        height: 290
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add13e26235d88e49bdecfbfac05ccaa
+      internalID: 1062234127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Cyber15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1180
+        width: 160
+        height: 280
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8528ebdf68fde78419ec21c52a0f3178
+      internalID: 1243481129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Cyber16
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 1190
+        width: 180
+        height: 270
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f9f7a525b7ccd47aa658d3e68d362b
+      internalID: 1139821520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Cyber17
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 1160
+        width: 180
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d538aee62fce3584d92c65c1fbaf743f
+      internalID: 267199637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Cyber21
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 820
+        width: 180
+        height: 290
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dbd0d9f4ac71a84388e90f0bfcb0ae9
+      internalID: 167382986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Cyber22
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 800
+        width: 180
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda2c488ee13de7499bef6808c27b1d2
+      internalID: 741766703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Cyber23
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 820
+        width: 160
+        height: 290
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29004377631629b4ea62e425dcd6e2bc
+      internalID: 2018547671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Cyber24
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 810
+        width: 160
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c3581aaf28fa624bb6b61fe1690fc80
+      internalID: 1637045173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Cyber25
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 820
+        width: 160
+        height: 290
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c84a4912fdbb047a5a75d0d2ae3994
+      internalID: 1391634923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Cyber26
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 830
+        width: 180
+        height: 280
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 182976a092c24474b94443cafd1d4907
+      internalID: 2029145692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Cyber27
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 800
+        width: 180
+        height: 320
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d1a960e56f63048abd1d735b998379
+      internalID: -313318012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Cyber31
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 370
+        width: 180
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a32c8adcd7bb7e4e9803e32606af887
+      internalID: -501667875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Cyber32
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 350
+        width: 180
+        height: 320
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a90dfa32f8eeb459f38197156c3bd7
+      internalID: 1370028279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Cyber33
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 370
+        width: 170
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae9232fdad3826f4e9a490549fba95cf
+      internalID: 1902747511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Cyber34
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 360
+        width: 170
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea5ffd5b4c857a41a15abb3388e8250
+      internalID: 1273704525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Cyber35
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 380
+        width: 180
+        height: 290
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a222811d73e0d2498898f1ad49eba12
+      internalID: -514944276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Cyber36
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 350
+        width: 180
+        height: 320
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32837bc7defad44686afec5e00903f5
+      internalID: 826609265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Cyber37
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 370
+        width: 170
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed753d9a8952f1848abd6bbe52f21297
+      internalID: -1062763213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Cyber41
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 60
+        width: 180
+        height: 280
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 830b640d3c5a7ec49a33089975aab02f
+      internalID: -543754327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Cyber42
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 40
+        width: 180
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3c1dbdd5e7bf74e92e1f156b2ff229
+      internalID: -1659693506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Cyber43
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 60
+        width: 160
+        height: 280
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a73f5d417a72a240ab5465f5e16a8fb
+      internalID: 307434945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Cyber44
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 50
+        width: 160
+        height: 290
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4d138781626024ab74e9f3d446070f
+      internalID: 874311802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Cyber45
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 60
+        width: 160
+        height: 280
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8e2a6183ccf6543abd9855b84347f7
+      internalID: -954862861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Cyber46
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 60
+        width: 180
+        height: 270
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0550e553922b89f4dacc12ad17416c35
+      internalID: 1283568985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Men Cyber47
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 30
+        width: 180
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1189d20fcf844f14cb64dbd9a6ba14a6
+      internalID: 117794871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Men Cyber16: 1139821520
+      Men Cyber 11: -639065712
+      Men Cyber44: 874311802
+      Men Cyber27: -313318012
+      Men Cyber25: 1391634923
+      Men Cyber17: 267199637
+      Men Cyber26: 2029145692
+      Men Cyber35: -514944276
+      Men Cyber22: 741766703
+      Men Cyber14: 1062234127
+      Men Cyber37: -1062763213
+      Men Cyber32: 1370028279
+      Men Cyber33: 1902747511
+      Men Cyber41: -543754327
+      Men Cyber47: 117794871
+      Men Cyber43: 307434945
+      Men Cyber15: 1243481129
+      Men Cyber36: 826609265
+      Men Cyber21: 167382986
+      Men Cyber13: 918680048
+      Men Cyber23: 2018547671
+      Men Cyber45: -954862861
+      Men Cyber46: 1283568985
+      Men Cyber34: 1273704525
+      Men Cyber24: 1637045173
+      Men Cyber42: -1659693506
+      Men Cyber31: -501667875
+      Men Cyber12: -441309056
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

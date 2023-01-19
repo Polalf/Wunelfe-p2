@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7094674185105570565}
   m_Layer: 3
-  m_Name: NPC
+  m_Name: NPC 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -142,6 +142,7 @@ GameObject:
   - component: {fileID: 7094674186443645598}
   - component: {fileID: 7094674186443645596}
   - component: {fileID: 7094674186443645595}
+  - component: {fileID: 3982970183979055956}
   m_Layer: 3
   m_Name: personaje
   m_TagString: Untagged
@@ -158,8 +159,8 @@ Transform:
   m_GameObject: {fileID: 7094674186443645594}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 9.279058, y: 0.49999952, z: -9.807831}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7094674186602712281}
   m_Father: {fileID: 7094674185105570565}
@@ -206,8 +207,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.0993236, g: 0.6792453, b: 0.118023954, a: 1}
+  m_Sprite: {fileID: -2059298681, guid: 585b846ba6950ad48aacf86606e848c8, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -227,10 +228,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 1
+  m_Radius: 2
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0, y: 0.2, z: 0}
+  m_Center: {x: 0, y: 1.5, z: 0}
 --- !u!114 &7094674186443645596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,7 +260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: 0
-  NpcAnimator: {fileID: 0}
+  NpcAnimator: {fileID: 3982970183979055956}
   speed: 3
   currentSpeed: 0
   PointA: {fileID: 7094674185256476073}
@@ -286,6 +287,26 @@ MonoBehaviour:
   dialogueManager: {fileID: 0}
   Player: {fileID: 0}
   InDialogue: 0
+--- !u!95 &3982970183979055956
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7094674186443645594}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3761b4b08c9ffa04b9dc2a2624a46638, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7094674186602712280
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,10 +349,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 1.5369098
+  m_Radius: 0.88
+  m_Height: 3
   m_Direction: 1
-  m_Center: {x: 0, y: 0.2684549, z: 0}
+  m_Center: {x: 0, y: 1.5, z: 0}
 --- !u!1 &7094674186823869131
 GameObject:
   m_ObjectHideFlags: 0
