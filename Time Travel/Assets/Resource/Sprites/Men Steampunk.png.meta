@@ -3,7 +3,7 @@ guid: 585b846ba6950ad48aacf86606e848c8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -47,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -702,37 +708,36 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Men Steampunk24: 43231198
-      Men Steampunk13: 1900370206
-      Men Steampunk26: 309181694
-      Men Steampunk44: 2058828769
-      Men Steampunk35: 2057481517
-      Men Steampunk41: 35446734
-      Men Steampunk32: -1712002279
-      Men Steampunk17: -358510099
-      Men Steampunk22: 218476379
-      Men Steampunk46: 284908565
-      Men Steampunk14: 1239071221
       Men Steampunk11: -2059298681
-      Men Steampunk31: 2051933562
-      Men Steampunk45: -836586125
-      Men Steampunk36: 1870381706
-      Men Steampunk37: 1862476565
       Men Steampunk12: 909836344
-      Men Steampunk21: 1214565156
-      Men Steampunk42: 714780332
-      Men Steampunk27: 658702366
-      Men Steampunk25: -1983305976
-      Men Steampunk47: -1233812327
-      Men Steampunk43: -897302555
+      Men Steampunk13: 1900370206
+      Men Steampunk14: 1239071221
       Men Steampunk15: -74330433
       Men Steampunk16: -1866586919
-      Men Steampunk34: -508432322
-      Men Steampunk33: 2088227405
+      Men Steampunk17: -358510099
+      Men Steampunk21: 1214565156
+      Men Steampunk22: 218476379
       Men Steampunk23: 798524474
-  spritePackingTag: 
+      Men Steampunk24: 43231198
+      Men Steampunk25: -1983305976
+      Men Steampunk26: 309181694
+      Men Steampunk27: 658702366
+      Men Steampunk31: 2051933562
+      Men Steampunk32: -1712002279
+      Men Steampunk33: 2088227405
+      Men Steampunk34: -508432322
+      Men Steampunk35: 2057481517
+      Men Steampunk36: 1870381706
+      Men Steampunk37: 1862476565
+      Men Steampunk41: 35446734
+      Men Steampunk42: 714780332
+      Men Steampunk43: -897302555
+      Men Steampunk44: 2058828769
+      Men Steampunk45: -836586125
+      Men Steampunk46: 284908565
+      Men Steampunk47: -1233812327
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
